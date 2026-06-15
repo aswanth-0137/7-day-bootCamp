@@ -2,13 +2,19 @@ body{
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
-    background:linear-gradient(to left top, #465C88 0%, #FF7A30 25%, #E9E3DF 65%, #1a1a1a 100%);
+    background:linear-gradient(to left, #465C88 0%, #FF7A30 25%, #E9E3DF 65%, #1a1a1a 100%);
 }
 
+
 @media (max-width: 768px){
-    .container{
-        flex-direction: column;
-        max-width: 100%;
+    .hero{
+        flex-direction: column !important;
+        width:100% !important;
+    }
+
+    .hero-right-content,.hero-left-content{
+        margin: 20px;
+        padding: 20px;
     }
 }
 
