@@ -20,7 +20,7 @@ body{
 
 .hero{
    
-    color: #fff;
+    color: black;
     display: flex;
     flex-direction: row;
     padding: 20px;
