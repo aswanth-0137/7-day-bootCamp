@@ -18,6 +18,55 @@ body{
     }
 }
 
+/* cursor remover */
+h1,p{
+    user-select: none;
+}
+
+/* navbar */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding:20px
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar li{
+    
+    padding: 20px;
+    
+    /* z-index: 10; */
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar li:hover{
+    background: rgba(255,255,255,0.3);
+    /* -webkit-backdrop-filter: blur(8px);  */
+    backdrop-filter: blur(30px);
+    
+    /* border-color: rgba(0,0,0,0.3); */
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+/* Hero */
+
 .hero{
    
     color: black;
@@ -26,7 +75,8 @@ body{
     padding: 20px;
     padding-top: 200px;
     padding-bottom: 200px;
-    align-items: center
+    align-items: center;
+    width: 100%;
 }
 
 .hero-left-content{
@@ -67,6 +117,7 @@ body{
     padding: 40px;
     
     height: 30vh;
+    width: 100%;
 }
 .about-mj{
     align-self: center;
@@ -79,6 +130,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .queries{ 
