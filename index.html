@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form method="post" id="contactForm"></form>
     <div class="container">
         <nav class="navbar">
-            <ul>
+            <!-- <button class="menu-btn" id="menu-btn">=</button> -->
+            <ul class="navLinks" id="navLinks">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -47,11 +49,16 @@
     
     <label for="email">Email : </label>
     <input type="email" id="email" name="email">
-    
-    <button type="submit">Send Message</button>
+
+    <button type="btn" onclick="sendMessage()">Send Message</button>
     </div>
     
     </section>
     </div>
+
+</form>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -16,7 +16,18 @@ body{
         margin: 20px;
         padding: 20px;
     }
+
+
+    }
+
+
+    .navbar:hover .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
 
 /* cursor remover */
 h1,p{
